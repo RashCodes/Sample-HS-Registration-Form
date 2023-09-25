@@ -1,0 +1,50 @@
+:root {
+
+    --primary-color: #000
+}
+
+.signature-pad-form{
+    margin-top: 30px;
+    margin-left: 25px;
+
+}
+
+.signature-pad{
+    cursor: url(pen.png) 1 26, pointer;
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+
+}
+
+.clear-button{
+    color: var(--primary-color);
+    margin-left: 25px;
+
+}
+
+@media (pointer: coarse) {
+    body {
+        overflow: hidden;
+    }
+}
+
+.flextent {
+    display: flex;
+}
+
+.flextention:last-child {
+    margin: 0;
+}
+
+.previewbtn {
+    background-color: #09ff00;
+    color: aliceblue;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px #c0c0c0;
+    
+}
+
+.previewbtn:hover {
+    background-color: #28e421;
+}

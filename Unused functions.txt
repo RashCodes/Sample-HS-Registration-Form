@@ -1,0 +1,95 @@
+<!-- Export to Excel Function -->
+<script>
+    function ExportToExcel(type, fn, dl) {
+        var elt = document.getElementById('tbl_exporttable_to_xls');
+        var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+        return dl ?
+            XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+            XLSX.writeFile(wb, fn || ('MySheetName.' + (type || 'xlsx')));
+    }
+</script>
+
+<!-- DropForm for Customer Onboarding Process -->
+<script>
+    function dropform(x) {
+        if(x==0) {
+            document.getElementById("formdetails").style.display="flex";
+        }
+            else {
+                document.getElementById("formdetails").style.display = "none";
+            }
+            return;
+    }
+</script>
+
+
+
+<!-- DropForm for Document Submission Process -->
+
+<script>
+    function dropform2(x, name2) {
+            if(x==0) {
+                document.getElementById("formdetails2").style.display="flex";
+                document.getElementById("companyName2").innerHTML = name2;
+            }
+                else {
+                    document.getElementById("formdetails2").style.display = "none";
+                }
+                return;
+        }
+</script>
+<script>
+    function dropondrop2(x) {
+            if(x==0) {
+                document.getElementById("dropondrop2").style.display="flex";
+            }
+                else {
+                    document.getElementById("dropondrop2").style.display = "none";
+                }
+                return;
+        }
+</script>
+
+
+<!-- DropForm for Document Verification Process -->
+
+<script>
+    function dropform3(x, name3) {
+            if(x==0) {
+                document.getElementById("formdetails3").style.display="flex";
+                document.getElementById("companyName3").innerHTML = name3;
+            }
+                else {
+                    document.getElementById("formdetails3").style.display = "none";
+                }
+                return;
+        }
+</script>
+
+<script>
+    function dropondrop3(x) {
+            if(x==0) {
+                document.getElementById("dropondrop3").style.display="flex";
+            }
+                else {
+                    document.getElementById("dropondrop3").style.display = "none";
+                }
+                return;
+        }
+</script>
+
+
+<!-- DropForm for Application Approval Process -->
+
+<script>
+    function dropform4(x, name4) {
+            if(x==0) {
+                document.getElementById("formdetails4").style.display="flex";
+                document.getElementById("companyName4").innerHTML = name4;
+            }
+                else {
+                    document.getElementById("formdetails4").style.display = "none";
+                }
+                return;
+        }
+</script>
